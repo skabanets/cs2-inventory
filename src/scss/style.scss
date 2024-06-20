@@ -1,25 +1,22 @@
 @import 'common';
 @import 'variables';
 
-//container
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
+.header {
+  height: 60px;
+  background-color: $primary-сolor;
 
-  min-width: 320px;
-  max-width: 375px;
-}
-
-@media only screen and (min-width: $md) {
   .container {
-    max-width: $md;
-    padding: 0 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    text-transform: uppercase;
   }
 }
 
-@media only screen and (min-width: $lg) {
-  .container {
-    max-width: $lg;
-    padding: 0 100px;
-  }
+.weapons-section {
+  min-height: calc(100vh - 60px);
+  padding: 40px 0;
 }
