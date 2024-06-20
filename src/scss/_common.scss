@@ -1,1 +1,54 @@
 @import 'modern-normalize';
+
+//reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//fonts
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../public/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../../public/fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../public/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../../public/fonts/Montserrat-SemiBold.woff2') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+//common
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}

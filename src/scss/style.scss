@@ -1,2 +1,25 @@
 @import 'common';
 @import 'variables';
+
+//container
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  min-width: 320px;
+  max-width: 375px;
+}
+
+@media only screen and (min-width: $md) {
+  .container {
+    max-width: $md;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: $lg) {
+  .container {
+    max-width: $lg;
+    padding: 0 100px;
+  }
+}
