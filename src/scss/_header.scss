@@ -1,0 +1,14 @@
+.header {
+  height: 60px;
+  background-color: $primary-сolor;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    text-transform: uppercase;
+  }
+}
