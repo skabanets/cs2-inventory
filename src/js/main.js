@@ -1,5 +1,5 @@
 import '../scss/style.scss';
-import weapons from './weapons.js';
+import weapons from '../data/weapons.json';
 import weaponCardTemplate from './weaponCardTemplate.js';
 import { toggleModal } from './modal.js';
 
