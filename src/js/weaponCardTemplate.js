@@ -1,8 +1,8 @@
 const weaponCardTemplate = weapon => {
-  const { name, image } = weapon;
+  const { id, name, image } = weapon;
 
   return `
-    <li class="weapon-card">
+    <li class="weapon-card" id="${weapon.id}">
       <div class="weapon-image-wrapper">
         <img src="${weapon.image}" alt="${weapon.name}" class="weapon-image"/>
         <h2 class="weapon-name">${weapon.name}</h2>

@@ -23,7 +23,6 @@ const handleKeyPress = e => {
 
 const closeModal = e => {
   if (e.target === refs.modalContent) return;
-
   toggleModal();
 };
 
