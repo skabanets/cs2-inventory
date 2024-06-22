@@ -1,6 +1,7 @@
 const refs = {
   modal: document.querySelector('.modal-wrapper'),
   modalContent: document.querySelector('.modal-window'),
+  exitBtn: document.querySelector('.button-exit'),
 };
 
 const toggleModal = () => {
@@ -22,8 +23,14 @@ const handleKeyPress = e => {
 };
 
 const closeModal = e => {
-  if (e.target === refs.modalContent) return;
-  toggleModal();
+  e.stopPropagation();
+
+  if (
+    e.target === refs.modal ||
+    e.target.closest('.button-exit') === refs.exitBtn
+  ) {
+    toggleModal();
+  }
 };
 
 refs.modal.addEventListener('click', closeModal);

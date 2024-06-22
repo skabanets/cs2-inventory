@@ -6,7 +6,7 @@ import { toggleModal } from './modal.js';
 
 const refs = {
   weaponsList: document.querySelector('.weapons-list'),
-  modalContent: document.querySelector('.modal-window'),
+  modalContent: document.querySelector('.modal-content'),
   inventoryInfo: document.querySelector('.inventory-stats'),
 };
 

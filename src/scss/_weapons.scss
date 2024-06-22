@@ -47,7 +47,7 @@
 
 .weapon-image-wrapper {
   width: 100%;
-  background: url('/public/textura.avif');
+  background: url('/public/images/textura.avif');
   background-size: cover;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .weapon-modal-image {
-  background: url('/public/textura.avif');
+  background: url('/public/images/textura.avif');
   background-size: cover;
   border: 2px solid white;
   border-radius: 8px;
@@ -118,6 +118,7 @@
   float: right;
   transition: all $transition;
   font-size: 14px;
+
   &:hover {
     background-color: $card-color;
     color: $card-title;
