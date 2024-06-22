@@ -7,11 +7,18 @@ import { toggleModal } from './modal.js';
 const refs = {
   weaponsList: document.querySelector('.weapons-list'),
   modalContent: document.querySelector('.modal-window'),
+  inventoryInfo: document.querySelector('.inventory-stats'),
 };
 
 const renderWeapons = weapons => {
   const markup = weapons.map(weaponCardTemplate).join('');
   refs.weaponsList.innerHTML = markup;
+
+  const weaponsCount = weapons.length;
+  const weaponValue = weapons.reduce((acc, elem) => {
+    return acc + elem.price;
+  }, 0);
+  refs.inventoryInfo.innerHTML = `<p>Total: ${weaponsCount}</p><span>/</span><p>Value: ${weaponValue}$</p>`;
 };
 
 const handleClickCard = e => {

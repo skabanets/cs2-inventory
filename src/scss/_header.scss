@@ -12,3 +12,16 @@
     text-transform: uppercase;
   }
 }
+
+.inventory-stats {
+  margin-left: auto;
+  display: none;
+  gap: 10px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: $md) {
+  .inventory-stats {
+    display: flex;
+  }
+}
