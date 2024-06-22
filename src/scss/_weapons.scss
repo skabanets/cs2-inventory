@@ -19,7 +19,7 @@
 .weapon-card {
   overflow: hidden;
   cursor: pointer;
-  transition: background-color $transition;
+  transition: all $transition;
   width: calc((100% - 15px) / 2);
   border-radius: 8px;
 
@@ -64,11 +64,62 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 16px;
-  transition: color $transition;
+  transition: all $transition;
 }
 
 @media screen and (min-width: $md) {
   .weapon-name {
     font-size: 20px;
+  }
+}
+
+.weapon-modal-image {
+  background: url('/public/textura.avif');
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.weapon-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: $md) {
+  .weapon-info {
+    gap: 20px;
+  }
+}
+
+.weapon-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: $md) {
+  .weapon-details {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.market-link {
+  width: fit-content;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  margin-top: 20px;
+  float: right;
+  transition: all $transition;
+
+  &:hover {
+    background-color: $card-color;
+    color: $card-title;
   }
 }
