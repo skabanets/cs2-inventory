@@ -4,7 +4,7 @@ const refs = {
   exitBtn: document.querySelector('.button-exit'),
 };
 
-const toggleModal = () => {
+export const toggleModal = () => {
   refs.modal.classList.toggle('is-hidden');
 
   if (!refs.modal.classList.contains('is-hidden')) {
@@ -34,5 +34,3 @@ const closeModal = e => {
 };
 
 refs.modal.addEventListener('click', closeModal);
-
-export { toggleModal };
